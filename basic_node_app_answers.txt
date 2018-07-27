@@ -1,0 +1,16 @@
+1.  What is a Node module?
+
+A node module is like a JavaScript library.  It is a file that contains code that fulfills a certain purpose.  You can import this into your files to use the methods/functionality without having to rewrite it multiple times.
+
+2.  What is the main difference between exports and module.exports?
+
+module.exports is used when you want to be specific about the type of the object that you are creating.  module.exports always starts as an empty object so you can rewrite it however you like.  
+
+You can overwrite module.exports if you assign a value directly to it.  
+
+If you just use exports it refers to the same object, but you cannot overwrite it entirely.
+
+3.  Why is using exports recommended?
+
+To avoid overwriting module.exports entirely.
+
